@@ -1,11 +1,17 @@
 // Colors
 
-$white: #FFF;
+$white: #fff;
 $black: #000;
+
+$dark-blue: hsl(233, 47%, 7%);
+$blue: hsl(244, 38%, 16%);
+$violet: rgba(170, 92, 219, 0.7);
+$span-violet: hsl(277, 64%, 61%);
+
+$white-para: hsla(0, 0%, 100%, 0.75); //(main paragraph)
+$white-head: hsla(0, 0%, 100%, 0.6); // (stat headings)
 
 // Media Breakpoints
 
 $break-m: 768px;
-$break-l: 1024px;
-
-$max-width: 1200px;
+$break-l: 1440px;

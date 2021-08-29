@@ -1,1 +1,23 @@
+h1 {
+  text-align: center;
+  width: 90%;
+  margin: 30px auto;
+}
 
+h1,
+h2 {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.insights {
+  color: $span-violet;
+}
+
+.main-para p {
+  color: $white-para;
+  text-align: center;
+  width: 86%;
+  margin: auto;
+  line-height: 24px;
+  font-weight: 400;
+}

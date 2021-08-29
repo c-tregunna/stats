@@ -409,9 +409,95 @@ ul {
   list-style: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: grey;
-  font-size: 10em;
+  font-size: 15px;
+  background-color: #090b1a;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+}
+
+.main-wrap {
+  background-color: #1b1938;
+  width: 85%;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  height: 230px;
+  background: linear-gradient(to right, rgba(105, 33, 150, 0.7), rgba(105, 33, 150, 0.7)), url("../images/image-header-mobile.jpg") no-repeat top center;
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
+  filter: contrast(180%);
+}
+
+.stat-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+.stat-total,
+.stat p {
+  margin: 2px;
+}
+.stat p {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+h1 {
+  text-align: center;
+  width: 90%;
+  margin: 30px auto;
+}
+
+h1,
+h2 {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.insights {
+  color: #aa5cdb;
+}
+
+.main-para p {
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  width: 86%;
+  margin: auto;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=styles.css.map */
