@@ -415,6 +415,7 @@ ul {
 
 body {
   font-size: 15px;
+  font-weight: 400;
   background-color: #090b1a;
   color: #fff;
   height: 100vh;
@@ -435,6 +436,15 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 1440px) {
+  .main-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 72%;
+    max-width: 1036px;
+    height: 50vh;
+  }
+}
 
 header {
   width: 100%;
@@ -444,23 +454,53 @@ header {
   border-radius: 10px 10px 0px 0px;
   filter: contrast(180%);
 }
+@media (min-width: 1440px) {
+  header {
+    border-radius: 0px 10px 10px 0px;
+    height: 100%;
+    width: 80%;
+  }
+}
 
-.stat-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 30px;
+@media (min-width: 1440px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .stat {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  margin: 20px;
+}
+@media (min-width: 1440px) {
+  .stat {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+.stat-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+@media (min-width: 1440px) {
+  .stat-wrap {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 11%;
+  }
+}
+.stat-total span {
+  text-transform: uppercase;
 }
 .stat-total,
 .stat p {
-  margin: 2px;
+  margin: 4px;
 }
 .stat p {
   text-transform: uppercase;
@@ -473,13 +513,24 @@ header {
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: #fff;
+  text-decoration: none;
+}
+.attribution a:hover {
+  text-decoration: underline;
 }
 
 h1 {
   text-align: center;
   width: 90%;
   margin: 30px auto;
+}
+@media (min-width: 1440px) {
+  h1 {
+    text-align: left;
+    width: 70%;
+    margin: 40px 15%;
+  }
 }
 
 h1,
@@ -498,6 +549,13 @@ h2 {
   margin: auto;
   line-height: 24px;
   font-weight: 400;
+}
+@media (min-width: 1440px) {
+  .main-para p {
+    text-align: left;
+    width: 70%;
+    margin: auto 15%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

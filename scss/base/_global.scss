@@ -3,6 +3,7 @@
 }
 body {
   font-size: 15px;
+  font-weight: 400;
   background-color: $dark-blue;
   color: $white;
   height: 100vh;
@@ -16,6 +17,12 @@ body {
   margin: auto;
   border-radius: 10px;
   @include flex($dir: column, $just: center, $align: center);
+  @include medqL($break-l) {
+    @include flex($dir: row-reverse);
+    width: 72%;
+    max-width: 1036px;
+    height: 50vh;
+  }
 }
 
 header {
@@ -30,19 +37,39 @@ header {
   background-size: cover;
   border-radius: 10px 10px 0px 0px;
   filter: contrast(180%);
+  @include medqL($break-l) {
+    border-radius: 0px 10px 10px 0px;
+    height: 100%;
+    width: 80%;
+  }
 }
 
-.stat-wrap {
-  @include flex($dir: column, $align: center);
-  margin: 30px;
+main {
+  @include medqL($break-l) {
+    @include flex($dir: column, $align: flex-start);
+  }
 }
 
 .stat {
   @include flex($dir: column, $align: center);
-  margin: 10px;
+  margin: 20px;
+  @include medqL($break-l) {
+    @include flex($align: flex-start);
+  }
+  &-wrap {
+    @include flex($dir: column, $align: center);
+    margin: 30px;
+    @include medqL($break-l) {
+      @include flex($dir: row);
+      margin: 40px 11%;
+    }
+  }
+  &-total span {
+    text-transform: uppercase;
+  }
   &-total,
   p {
-    margin: 2px;
+    margin: 4px;
   }
   & p {
     text-transform: uppercase;
@@ -55,5 +82,9 @@ header {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: $white;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }

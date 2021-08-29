@@ -2,6 +2,11 @@ h1 {
   text-align: center;
   width: 90%;
   margin: 30px auto;
+  @include medqL($break-l) {
+    text-align: left;
+    width: 70%;
+    margin: 40px 15%;
+  }
 }
 
 h1,
@@ -20,4 +25,9 @@ h2 {
   margin: auto;
   line-height: 24px;
   font-weight: 400;
+  @include medqL($break-l) {
+    text-align: left;
+    width: 70%;
+    margin: auto 15%;
+  }
 }
