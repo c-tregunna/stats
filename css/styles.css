@@ -459,6 +459,7 @@ header {
     border-radius: 0px 10px 10px 0px;
     height: 100%;
     width: 80%;
+    background: linear-gradient(to right, rgba(105, 33, 150, 0.7), rgba(105, 33, 150, 0.7)), url("../images/image-header-desktop.jpg");
   }
 }
 

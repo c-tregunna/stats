@@ -41,6 +41,12 @@ header {
     border-radius: 0px 10px 10px 0px;
     height: 100%;
     width: 80%;
+    background: linear-gradient(
+        to right,
+        darken($violet, 25%),
+        darken($violet, 25%)
+      ),
+      url("../images/image-header-desktop.jpg");
   }
 }
 
